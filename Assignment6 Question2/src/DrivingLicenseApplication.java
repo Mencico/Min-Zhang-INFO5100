@@ -24,15 +24,9 @@ public class DrivingLicenseApplication {
         Date now = new Date();
         Date birth = new GregorianCalendar(year, month, day).getTime();
 
-        try{
-            int difference = (int) (ChronoUnit.DAYS.between( birth.toInstant(),
-                    now.toInstant())); //calculate the difference
-            int age = difference/365; // calculate the specific age
-            if (age < 16) {
-                throw new Exception("The age of the applicant is " + age + " which is too early to apply for a driving license！");}
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+        //for test
+
+
     }
 }
 
